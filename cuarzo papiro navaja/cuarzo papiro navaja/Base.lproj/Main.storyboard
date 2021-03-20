@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cuarzo_papiro_navaja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="EJ8-h7-5f1">
+                                <rect key="frame" x="54.5" y="208" width="305" height="480.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5M-f2-6fo">
+                                        <rect key="frame" x="108" y="0.0" width="89" height="99.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="83"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuarzo, papiro, navaja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atP-C7-vHQ">
+                                        <rect key="frame" x="56.5" y="175.5" width="192.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="C38-LG-hRd">
+                                        <rect key="frame" x="0.0" y="275.5" width="305" height="84"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A0-Mx-5vg">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="84"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <state key="normal" title="🗡"/>
+                                                <connections>
+                                                    <action selector="scissorsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oa1-Lj-2TW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrO-At-VBy">
+                                                <rect key="frame" x="120" y="0.0" width="65" height="84"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <state key="normal" title="💎"/>
+                                                <connections>
+                                                    <action selector="rockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xQ-hR-bQE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4I-cT-RvM">
+                                                <rect key="frame" x="240" y="0.0" width="65" height="84"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <state key="normal" title="📜"/>
+                                                <connections>
+                                                    <action selector="paperAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gd1-N9-Hix"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-TT-TnT">
+                                        <rect key="frame" x="43.5" y="435.5" width="218" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Otra vez papantla?"/>
+                                        <connections>
+                                            <action selector="playAgainAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KWp-Zi-mrV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EJ8-h7-5f1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5lc-jh-haV"/>
+                            <constraint firstItem="EJ8-h7-5f1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I3I-Me-xTx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appIcon" destination="y5M-f2-6fo" id="Bmu-FQ-00T"/>
+                        <outlet property="paperOutlet" destination="E4I-cT-RvM" id="7Kf-fA-IaO"/>
+                        <outlet property="playAgainOutlet" destination="eTV-TT-TnT" id="oft-iO-sjR"/>
+                        <outlet property="rockOutlet" destination="CrO-At-VBy" id="Hta-x4-Xmn"/>
+                        <outlet property="scissorsOutlet" destination="2A0-Mx-5vg" id="6B3-tB-Wmi"/>
+                        <outlet property="statusOutlet" destination="atP-C7-vHQ" id="rbr-uQ-Idp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
